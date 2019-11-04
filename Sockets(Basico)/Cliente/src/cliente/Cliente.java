@@ -20,6 +20,7 @@ import java.util.logging.Logger;
  */
 public class Cliente
 {
+    
     public static void main(String[] args) throws UnknownHostException, IOException {
         Socket s = new Socket( "127.0.0.1", 9797);
         InputStream entrada = s.getInputStream();
