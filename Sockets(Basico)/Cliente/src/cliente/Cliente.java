@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader ;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -27,6 +28,11 @@ public class Cliente
         BufferedReader lector = new BufferedReader( new InputStreamReader( entrada ) );
         System.out.println(lector.readLine());
         lector.close();
-        s.close();   
+        s.close();
+        
+        
+        Scanner scanner = new Scanner(System.in);                
+        System.out.println("Presiona enter para cerrar");
+        String cerrar = scanner.nextLine();  
     }
 }
