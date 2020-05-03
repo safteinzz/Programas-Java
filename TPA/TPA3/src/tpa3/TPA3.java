@@ -29,11 +29,12 @@ public class TPA3 {
         ArbolBin <Integer> af = new ArbolBin(null,2,null);
         ArbolBin <Integer> ae = new ArbolBin(null,9,null);
         ArbolBin <Integer> ad = new ArbolBin(null,1,null);
-        ArbolBin <Integer> ac = new ArbolBin(af,9,ag);
+        ArbolBin <Integer> ac = new ArbolBin(af,9,null);
         ArbolBin <Integer> ab = new ArbolBin(ad,7,ae);
         ArbolBin <Integer> aa = new ArbolBin(ab,8,ac);
         
         System.out.println("El arbol \"a\" tiene un total de " + contarNodos(a) + " nodos");
+        System.out.println("El arbol \"b\" tiene un total de " + contarNodos(aa) + " nodos");
         
         if (todosPares(a))
             System.out.println("Todos son pares");
@@ -69,6 +70,11 @@ public class TPA3 {
             return false;
     }
     
+    /**
+     * Contar nodos
+     * @param arbol
+     * @return 
+     */
     private static int contarNodos(ArbolBin<Integer> arbol)
     {
         if(arbol.esVacio()) return 0;
@@ -82,8 +88,7 @@ public class TPA3 {
     }
     
     /**
-     * Visita nodo, comprueba si es impar, si es impar devuelve false sino devuelve true si la llamada a sus hijos es true o false si la llamada a sus hijos es false
-     * los nodos vacios dan valor true
+     * Comprobar si todos pares
      * @param arbol
      * @return 
      */
@@ -104,7 +109,7 @@ public class TPA3 {
     }
     
     /**
-     * 
+     * Arbol esta lleno
      * @param arbol
      * @return 
      */
@@ -121,7 +126,7 @@ public class TPA3 {
     }
     
     /**
-     * 
+     * Arbol es de busqueda BST
      * @param arbol
      * @return 
      */
