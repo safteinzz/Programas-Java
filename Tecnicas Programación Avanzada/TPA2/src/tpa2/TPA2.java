@@ -55,7 +55,7 @@ public class TPA2 {
 
 
         int C = 8;
-        System.out.println(multNxC(2, C));
+        System.out.println(multNxC(5, C));
         
         int e[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         System.out.println(busTer(e, 11, 0, 9));
@@ -172,6 +172,13 @@ public class TPA2 {
     
     /**
      * Mutiplicar N por C DyV
+     * 
+     * Implementar en Java una función que reciba como entrada un número N, y
+        que calcule el producto de N·C, siendo C otro número constante preestablecido. Se pide
+        resolver el problema como una repetición de sumas utilizando el enfoque de divide y
+        vencerás, y teniendo en cuenta que el orden de magnitud de la función propuesta debe
+        ser obligatoriamente O(log N). Calcular de manera razonada su complejidad. 
+        *
      * @param N
      * @param C
      * @return 

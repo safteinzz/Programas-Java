@@ -33,6 +33,17 @@ public class TPA3 {
         ArbolBin <Integer> ab = new ArbolBin(ad,7,ae);
         ArbolBin <Integer> aa = new ArbolBin(ab,8,ac);
         
+        //CREACION ARBOL INTEGERS (LLENO)
+        ArbolBin <Integer> aii = new ArbolBin(null,10,null);
+        ArbolBin <Integer> ahh = new ArbolBin(null,2,null);
+        ArbolBin <Integer> agg = new ArbolBin(null,10,null);
+        ArbolBin <Integer> aff = new ArbolBin(null,2,null);
+        ArbolBin <Integer> aee = new ArbolBin(null,9,null);
+        ArbolBin <Integer> add = new ArbolBin(ahh,1,aii);
+        ArbolBin <Integer> acc = new ArbolBin(aff,9,agg);
+        ArbolBin <Integer> abb = new ArbolBin(ad,7,ae);
+        ArbolBin <Integer> aaa = new ArbolBin(abb,8,acc);
+        
         System.out.println("El arbol \"a\" tiene un total de " + contarNodos(a) + " nodos");
         System.out.println("El arbol \"b\" tiene un total de " + contarNodos(aa) + " nodos");
         
@@ -40,6 +51,11 @@ public class TPA3 {
             System.out.println("Todos son pares");
         else
             System.out.println("Alguno es impar");
+        
+        if (esLleno(aaa))
+            System.out.println("El arbol del prof esta lleno");
+        else 
+            System.out.println("El arbol del prof no esta lleno");
         
         if (esLleno(aa))
             System.out.println("El arbol LLENO esta lleno");
